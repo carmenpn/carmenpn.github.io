@@ -929,6 +929,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .services-list {
         padding: 130px 0 80px;
+        background-size: cover;
     }
 
     .services-list_text {
@@ -955,8 +956,12 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .button-cv {
-            width: 150px;
-            height: 150px;
+            width: 130px;
+            height: 130px;
+
+            .ch-info-wrap {
+                box-shadow: none;
+            }
 
             .ch-info-wrap,
             .ch-info {
@@ -975,7 +980,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 650px) {
     .home-header {
-        height: 100vh;
+        height: 90vh;
     }
 
     .menu {

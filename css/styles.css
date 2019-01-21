@@ -695,7 +695,8 @@ h1, h2, h3, h4, h5, h6 {
   .about-me_icon {
     margin-top: 30px; }
   .services-list {
-    padding: 130px 0 80px; }
+    padding: 130px 0 80px;
+    background-size: cover; }
   .services-list_text {
     margin-bottom: 50px; }
   .projects .paddings-x img {
@@ -709,8 +710,11 @@ h1, h2, h3, h4, h5, h6 {
     #about-page .about-cv .cv-img:after {
       display: none; }
   #about-page .button-cv {
-    width: 150px;
-    height: 150px; }
+    width: 130px;
+    height: 130px; }
+    #about-page .button-cv .ch-info-wrap {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
     #about-page .button-cv .ch-info-wrap,
     #about-page .button-cv .ch-info {
       width: 100px;
@@ -722,7 +726,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 650px) {
   .home-header {
-    height: 100vh; }
+    height: 90vh; }
   .menu .menu-list {
     display: none; }
   .menu .open-menu {
