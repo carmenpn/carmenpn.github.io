@@ -458,6 +458,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+#button-up {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+
+    a {
+        background-color: #6b6b6b;
+        padding: 20px;
+        display: flex;
+        font-size: 1.7rem;
+        color: #ffe458;
+    }
+
+    i {
+        height: 17px;
+    }
+}
+
+
 
 
 .contact-me {
@@ -466,7 +485,7 @@ h1, h2, h3, h4, h5, h6 {
     @extend .flex;
 
     .form-contact {
-        background-color: #ffe458;
+        background-color: #ececec;
         padding: 50px;
         width: 50%;
         height: 100%;
@@ -491,7 +510,7 @@ h1, h2, h3, h4, h5, h6 {
             padding: 12px;
             height: 45px;
             box-shadow: none;
-            border: 0;
+            border: 1px solid #e8e8e8;
 
             &:focus {
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -504,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
             background: white url(../assets/29.png) right center no-repeat;
             background-size: contain;
             box-shadow: none;
-            border: 0;
+            border: 1px solid #e8e8e8;
 
             &:focus {
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);

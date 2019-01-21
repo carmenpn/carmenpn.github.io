@@ -7,6 +7,7 @@ $(function() {
 			var scrollOffset = $(document).scrollTop();
 			var progressBars = $(".progress-bars");
 			var containerOffset = progressBars.offset().top - window.innerHeight;
+			
 			if (scrollOffset > containerOffset) {
 				animateProgressBars();
 				$(document).unbind("scroll");
@@ -14,6 +15,14 @@ $(function() {
 		})
 	}
 
+	$(window).scroll(function() {
+		var buttonUp = $("#button-up");
+        if ($(this).scrollTop() > 300) {
+	        buttonUp.fadeIn();
+	    } else {
+	        buttonUp.fadeOut();
+	    }
+    });
 
 	function animateProgressBars() {
 		$(".progress-bars_bar > div").each(function() {
