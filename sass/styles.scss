@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, h6 {
     @extend .flex;
 
     .form-contact {
-        background-color: #efefef;
+        background-color: #ffe458;
         padding: 50px;
         width: 50%;
         height: 100%;
@@ -480,7 +480,7 @@ h1, h2, h3, h4, h5, h6 {
             font-family: stemBold;
             font-size: 45px;
             margin-bottom: 20px;
-            color: $red;
+            color: #333;
         }
 
         label {
@@ -490,6 +490,12 @@ h1, h2, h3, h4, h5, h6 {
         input {
             padding: 12px;
             height: 45px;
+            box-shadow: none;
+            border: 0;
+
+            &:focus {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
         }
 
         textarea {
@@ -497,7 +503,12 @@ h1, h2, h3, h4, h5, h6 {
             height: 100px;
             background: white url(../assets/29.png) right center no-repeat;
             background-size: contain;
+            box-shadow: none;
+            border: 0;
 
+            &:focus {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
         }
 
         #captcha {
@@ -518,9 +529,29 @@ h1, h2, h3, h4, h5, h6 {
 
     .img-contact {
         width: 50%;
-        background: url(../assets/contact-me-img.jpg) center -25px no-repeat;
+        background: url(../assets/contact-me-img.jpg) center no-repeat;
         background-size: cover;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 120px 50px;
+        justify-content: flex-end;
+        color: white;
+        line-height: 1.45;
+
+        &_title {
+            max-width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        
+        &_subtitle {
+            max-width: 50%;
+            text-align: center;
+            font-family: 'Satisfy', cursive;
+            font-size: 1.3rem;
+            margin-top: 20px;
+        }
     }
 }
 
