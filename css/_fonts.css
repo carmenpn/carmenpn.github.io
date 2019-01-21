@@ -1,0 +1,16 @@
+/* IMPORT FONTS */
+@font-face {
+  font-family: stemRegular;
+  src: url(../fonts/Stem-Regular.otf); }
+
+@font-face {
+  font-family: stemBold;
+  src: url(../fonts/Stem-Bold.otf); }
+
+@font-face {
+  font-family: stemLight;
+  src: url(../fonts/Stem-Light.otf); }
+
+@font-face {
+  font-family: stemMed;
+  src: url(../fonts/Stem-Medium.otf); }
