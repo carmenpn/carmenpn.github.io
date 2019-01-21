@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 
     h1 {
-        font-family: stemBold;
+        font-family: stemMed;
         font-size: 7rem;
         color: $red;
         overflow: hidden;
@@ -652,6 +652,7 @@ h1, h2, h3, h4, h5, h6 {
             display: block;
             position: relative;
             z-index: 9;
+            padding-right: 15px;
 
             img {
                 max-width: 22px;
@@ -865,11 +866,6 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 991px) {
     .home-pic {
         margin-top: 0;
-
-        &:after {
-            width: 100px;
-            height: 100px;
-        }
     }
 
     .about-me_title,
@@ -890,6 +886,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #about-page {
+        nav .large-6 {
+            width: 100%;
+        }
+
+        .menu .open-menu {
+            padding-right: 0;
+        }
+        
         .about-content {
             .columns {
                 width: 100%;
@@ -912,12 +916,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 768px) {
+    .home-pic {
+        #home-pic-after {
+            width: 120px;
+            left: 5px;
+        }
+    }
+
     .about-me_icon {
         margin-top: 30px;
     }
 
+    .services-list {
+        padding: 130px 0 80px;
+    }
+
     .services-list_text {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .projects .paddings-x img {
@@ -925,11 +940,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #about-page {
+        .about-content {
+            padding-bottom: 30px;
+        }
+
         .about-cv {
             padding: 0;
 
             img,
-            .about-me_title {
+            .about-me_title,
+            .cv-img:after {
                 display: none;
             }
         }
@@ -954,6 +974,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 650px) {
+    .home-header {
+        height: 100vh;
+    }
+
     .menu {
         .menu-list {
             display: none;
@@ -998,6 +1022,13 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 120px;
     }
 
+    .home-pic {
+        #home-pic-after {
+            width: 70px;
+            left: 5px;
+        }
+    }
+
     .header {
         h1 {
             font-size: 5.5rem;
@@ -1010,8 +1041,16 @@ h1, h2, h3, h4, h5, h6 {
 
     .about-me_title,
     .projects_title {
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin-bottom: -5px;
+    }
+
+    .about-me_subtitle {
+        margin: 15px 0;
+    }
+
+    .about-me_text {
+        margin-bottom: 25px;
     }
 
     .projects .paddings-x .project_title div {

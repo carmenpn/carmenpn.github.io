@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-pack: center;
   justify-content: center; }
   .header h1 {
-    font-family: stemBold;
+    font-family: stemMed;
     font-size: 7rem;
     color: #D7332C;
     overflow: hidden;
@@ -498,7 +498,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     display: block;
     position: relative;
-    z-index: 9; }
+    z-index: 9;
+    padding-right: 15px; }
     #about-page .menu .open-menu img {
       max-width: 22px;
       cursor: pointer; }
@@ -665,9 +666,6 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 991px) {
   .home-pic {
     margin-top: 0; }
-    .home-pic:after {
-      width: 100px;
-      height: 100px; }
   .about-me_title,
   .projects_title {
     font-size: 8rem;
@@ -677,6 +675,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; }
   .contact-me .img-contact {
     display: none; }
+  #about-page nav .large-6 {
+    width: 100%; }
+  #about-page .menu .open-menu {
+    padding-right: 0; }
   #about-page .about-content .columns {
     width: 100%; }
   #about-page .about-content .hide-mobile {
@@ -687,16 +689,24 @@ h1, h2, h3, h4, h5, h6 {
     display: none; } }
 
 @media only screen and (max-width: 768px) {
+  .home-pic #home-pic-after {
+    width: 120px;
+    left: 5px; }
   .about-me_icon {
     margin-top: 30px; }
+  .services-list {
+    padding: 130px 0 80px; }
   .services-list_text {
-    margin-bottom: 20px; }
+    margin-bottom: 50px; }
   .projects .paddings-x img {
     width: 100%; }
+  #about-page .about-content {
+    padding-bottom: 30px; }
   #about-page .about-cv {
     padding: 0; }
     #about-page .about-cv img,
-    #about-page .about-cv .about-me_title {
+    #about-page .about-cv .about-me_title,
+    #about-page .about-cv .cv-img:after {
       display: none; }
   #about-page .button-cv {
     width: 150px;
@@ -711,6 +721,8 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0 5px; } }
 
 @media only screen and (max-width: 650px) {
+  .home-header {
+    height: 100vh; }
   .menu .menu-list {
     display: none; }
   .menu .open-menu {
@@ -733,14 +745,21 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 430px) {
   .menu img {
     max-width: 120px; }
+  .home-pic #home-pic-after {
+    width: 70px;
+    left: 5px; }
   .header h1 {
     font-size: 5.5rem; }
   .header p {
     font-size: 1.5rem; }
   .about-me_title,
   .projects_title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: -5px; }
+  .about-me_subtitle {
+    margin: 15px 0; }
+  .about-me_text {
+    margin-bottom: 25px; }
   .projects .paddings-x .project_title div {
     font-size: 30px; }
   .contact-me .form-contact {
