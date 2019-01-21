@@ -1084,6 +1084,20 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 
+    #button-up {
+        right: 10px;
+        bottom: 10px;
+
+        a {
+            font-size: 1.3rem;
+            padding: 12px;
+        }
+
+        i {
+            height: 13px;
+        }
+    }
+
     .header {
         h1 {
             font-size: 5.5rem;
