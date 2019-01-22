@@ -735,7 +735,9 @@ h1, h2, h3, h4, h5, h6 {
     display: none; }
   #about-page .mobile-about-img {
     display: block; }
-  .sticky-cat {
+  .sticky-cat .cat img {
+    max-width: 100px; }
+  .sticky-cat .thought-bubble {
     display: none; } }
 
 @media only screen and (max-width: 768px) {
@@ -745,7 +747,7 @@ h1, h2, h3, h4, h5, h6 {
   .about-me_icon {
     margin-top: 30px; }
   .services-list {
-    padding: 130px 0 80px;
+    padding: 80px 0 70px;
     background-size: cover; }
   .services-list_text {
     margin-bottom: 50px; }
@@ -776,7 +778,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 650px) {
   .home-header {
-    height: 80vh; }
+    height: 82vh; }
   .menu .menu-list {
     display: none; }
   .menu .open-menu {

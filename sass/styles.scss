@@ -960,7 +960,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .sticky-cat {
-        display: none;
+        .cat img {
+            max-width: 100px;
+        }
+
+        .thought-bubble {
+            display: none;
+        }
     }
     
 }
@@ -978,7 +984,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .services-list {
-        padding: 130px 0 80px;
+        padding: 80px 0 70px;
         background-size: cover;
     }
 
@@ -1030,7 +1036,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 650px) {
     .home-header {
-        height: 80vh;
+        height: 82vh;
     }
 
     .menu {
