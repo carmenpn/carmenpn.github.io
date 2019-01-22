@@ -754,6 +754,7 @@ h1, h2, h3, h4, h5, h6 {
   .projects .paddings-x img {
     width: 100%; }
   #about-page .about-content {
+    height: auto;
     padding-bottom: 30px; }
   #about-page .about-cv {
     padding: 0; }
@@ -793,10 +794,8 @@ h1, h2, h3, h4, h5, h6 {
   .projects_title {
     font-size: 5.5rem;
     margin-bottom: -10px; }
-  #about-page .about-content {
-    height: auto; }
-    #about-page .about-content .columns {
-      padding-bottom: 60px; } }
+  #about-page .about-content .columns {
+    padding-bottom: 60px; } }
 
 @media only screen and (max-width: 430px) {
   .menu img {
